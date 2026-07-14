@@ -1,0 +1,2 @@
+import { MessageCircle } from 'lucide-react';import { professional } from '@/data/professional';import { buildWhatsAppUrl } from '@/lib/whatsapp';
+export function WhatsAppButton(){const url=buildWhatsAppUrl(professional.whatsappNumber,'Olá! Gostaria de solicitar um orçamento.'); if(!url) return null; return <a aria-label="Chamar no WhatsApp" href={url} target="_blank" rel="noreferrer" className="focus-ring fixed bottom-5 right-5 z-50 rounded-full bg-green-500 p-4 text-white shadow-xl transition hover:scale-105"><MessageCircle/></a>}
