@@ -1,0 +1,3 @@
+import type { Metadata } from 'next';import { ServiceCard } from '@/components/sections/Cards';import { SectionTitle } from '@/components/ui/SectionTitle';import { services } from '@/data/services';
+export const metadata:Metadata={title:'Serviços de pintura',description:'Conheça serviços de pintura residencial, comercial, grafiato, texturas e massa corrida.'};
+export default function Page(){return <section className="py-16"><div className="container"><SectionTitle eyebrow="Serviços" title="Todos os serviços"/><div className="grid gap-5 md:grid-cols-3">{services.map(s=><ServiceCard key={s.slug} service={s}/>)}</div></div></section>}

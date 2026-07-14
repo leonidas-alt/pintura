@@ -1,0 +1,2 @@
+import type { MetadataRoute } from 'next';import { services } from '@/data/services';
+export default function sitemap():MetadataRoute.Sitemap{const base='https://example.com';return ['','/servicos','/portfolio','/orcamento','/sobre','/contato','/privacidade'].map(p=>({url:`${base}${p}`,lastModified:new Date()})).concat(services.map(s=>({url:`${base}/servicos/${s.slug}`,lastModified:new Date()})))}
