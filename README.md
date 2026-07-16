@@ -31,19 +31,6 @@ npm run dev
 ```
 Acesse `http://localhost:3000`.
 
-## Variáveis de ambiente
-Configure em `.env.local`:
-```bash
-NEXT_PUBLIC_WHATSAPP_NUMBER=5511999999999
-```
-Use apenas números, com código do país e DDD. Se ausente ou inválido, botões do WhatsApp são ocultados ou exibem aviso no formulário.
-
-## Como alterar informações
-- Profissional: `src/data/professional.ts`
-- Serviços: `src/data/services.ts`
-- Portfólio, depoimentos, FAQ e regiões: `src/data/content.ts`
-- Imagens: substitua os arquivos em `public/images`
-
 ## Funcionalidades atuais
 - Páginas institucionais e comerciais completas
 - Formulário de orçamento em quatro etapas
@@ -51,10 +38,3 @@ Use apenas números, com código do país e DDD. Se ausente ou inválido, botõe
 - Mensagem organizada para abertura via `wa.me`
 - SEO básico com metadata, Open Graph, sitemap e robots
 - Componentes reutilizáveis e dados centralizados
-
-## Melhorias futuras
-- Integração com API ou painel administrativo
-- Envio real de arquivos por backend
-- Depoimentos reais verificados
-- Domínio e URL final no sitemap/robots
-- Analytics e eventos de conversão
