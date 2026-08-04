@@ -2,14 +2,6 @@
 
 Estrutura inicial de um site rápido, responsivo e orientado à conversão de pedidos de orçamento pelo WhatsApp.
 
-## Tecnologias
-- Next.js App Router
-- TypeScript
-- Tailwind CSS
-- React Hook Form
-- Zod
-- Lucide React
-
 ## Estrutura
 - `src/app`: rotas, metadata, sitemap e robots
 - `src/components`: layout, seções, formulário e UI reutilizável
